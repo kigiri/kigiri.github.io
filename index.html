@@ -342,7 +342,7 @@ document.getElementById('yt').innerHTML='<h3>videos</h3><button class="cropped-a
 "_v95GgtCulg$Aos Action twink 19 priest$2min 47sec"]
 .map(function(a,i,_){return(_=a.split('$'),'<div class="link"><a tabindex='+(i>19?-1:24+i)+' href="https://www.youtube.com/watch?v='+_[0]+'">'+_[1]+'</a><i>'+_[2]+'</i></div>')})
 .join('\n')
-
+setTimeout(function(){document.getElementsByTagName('head')[0].appendChild(Object.assign(document.createElement('link'),{rel:'stylesheet',href:'windows.css'}))})
 /*
 load yt links
 copy($$('.yt-lockup-title')
@@ -398,7 +398,6 @@ END
 </pre>
 </div>
 </div>
-<link href="windows.css" rel="stylesheet">
 <div id="links">
 <div class="hr"></div>
 <a class="github" href="https://github.com/kigiri">github</a>
