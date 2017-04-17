@@ -1,4 +1,25 @@
 <!DOCTYPE html>
+<!--
+Reading the code hey ?
+You know what's up.
+We should be friend, I like you.
+Enjoy this nice sunset.
+You deserve this.
+
+ 
+ 
+            ^^                   @@@@@@@@@
+       ^^       ^^            @@@@@@@@@@@@@@@
+                            @@@@@@@@@@@@@@@@@@              ^^
+                           @@@@@@@@@@@@@@@@@@@@
+ ~~~~ ~~ ~~~~~ ~~~~~~~~ ~~ &&&&&&&&&&&&&&&&&&&& ~~~~~~~ ~~~~~~~~~~~ ~~~
+ ~         ~~   ~  ~       ~~~~~~~~~~~~~~~~~~~~ ~       ~~     ~~ ~
+   ~      ~~      ~~ ~~ ~~  ~~~~~~~~~~~~~ ~~~~  ~     ~~~    ~ ~~~  ~ ~~
+   ~  ~~     ~         ~      ~~~~~~  ~~ ~~~       ~~ ~ ~~  ~~ ~
+ ~  ~       ~ ~      ~           ~~ ~~~~~~  ~      ~~  ~             ~~
+       ~             ~        ~      ~      ~~   ~             ~ 
+
+-->
 <html>
 <head>
   <meta charset="utf-8">
@@ -21,7 +42,7 @@
       display: inline-block;
     }
     h1, h4 { text-align: center; }
-    .blue, h3 { color: blue; }
+    #dev, .blue, h3 { color: blue; }
     .github { background-color: black; }
     .gmail { background-color: #dd4b39; }
     .twitch { background-color: #6441a4; }
@@ -75,16 +96,22 @@
       margin-bottom: 0;
     }
     .links-list {
+      position: relative;
       overflow: hidden;
       white-space: pre-wrap;
     }
     .cropped-action {
-      content: 'show more';
-      height: 6em;
+      position: absolute;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+      padding-top: 2em;
+      height: 4em;
       background: linear-gradient(to top, white, transparent);
+      bottom: 0;
     }
     .cropped {
-      max-height: 26em;
+      max-height: 33em;
       overflow: hidden;
     }
   </style>
@@ -121,8 +148,8 @@
 <a href="https://github.com/kigiri/ovh-sniffer">ovh-sniffer - Script pour acheter des serveur kimsufi</a>
 <a href="https://github.com/kigiri/js-file-explorer">js-file-explorer - Extension pour reformater l'affichage de la liste des fichier ngnix</a>
 </div>
-
 <div class="links-list cropped"><h3>videos</h3>
+<div class="cropped-action" onclick="(this.parentElement.classList.remove('cropped'), this.remove())">show more</div>
 <a href="https://www.youtube.com/watch?v=0GoG-Kxhia8">AngryCodeReview: Je crache sur Async / Await</a><i>19 minutes</i>
 <a href="https://www.youtube.com/watch?v=vpDytuYdK4w">CodeReview: un simple bot discord en JS</a><i>21 minutes</i>
 <a href="https://www.youtube.com/watch?v=L8AtfEkrIAI">Interventions live sur la programation avec 2 potes</a><i>4 heures</i>
@@ -375,7 +402,6 @@
 <a href="https://www.youtube.com/watch?v=jjD3uIgZqr4">Kamoulox(Aos) VS Hunts</a><i>8 minutes, 8 secondes.</i>
 <a href="https://www.youtube.com/watch?v=uwafz7hix9Q">Aos BG</a><i>7 minutes, 33 secondes.</i>
 <a href="https://www.youtube.com/watch?v=_v95GgtCulg">Aos Action twink 19 priest</a><i>2 minutes, 47 secondes.</i>
-<div class="cropped-action">show more</div>
 </div>
 <div id="info">
 J'ai fait ~ 2 videos / mois depuis 2007
@@ -428,5 +454,14 @@ END
 <a class="gmail" href="mailto:le.mikmac@gmail.com">gmail</a>
 <a class="twitch" href="https://twitch.tv/godofmacro">twitch</a></h4>
 </div>
+<script type="text/javascript">
+/*
+load yt links
+copy($$('.yt-lockup-title')
+  .map(e => ({ title: e.textContent, href: e.firstChild.href }))
+  .map(({title, href }) => `<a href="${href}">${title}</a>`)
+  .join('\n'))
+*/
+</script>
 </body>
 </html>
