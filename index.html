@@ -6,9 +6,10 @@
   <title>cdenis</title>
   <style type="text/css">
     html { font-family: monospace; min-height: 360px; margin: 0; }
+    body { max-width: 1850px; margin: 0 auto; position: relative; }
     * { box-sizing: border-box; }
     #content {
-      max-width: 600px;
+      max-width: 990px;
       margin: 0 auto;
       padding-top: 245px;
       height: 100%;
@@ -42,7 +43,7 @@
       bottom: 0;
       position: fixed;
       text-align: center;
-      max-width: 600px;
+      max-width: 990px;
       width: 100%;
       background: white;
       border-top: solid black 1px;
@@ -59,12 +60,32 @@
       height: 2px;
       margin-bottom: 16px;
     }
+    #info {
+      margin: 32px 0;
+    }
+    .links-list > a {
+      text-decoration: none;
+      margin-left: 1em;
+    }
+    .links-list > a:hover {
+      text-decoration: underline;
+    }
     .links-list > h3 {
       margin-top: 48px;
       margin-bottom: 0;
     }
     .links-list {
+      overflow: hidden;
       white-space: pre-wrap;
+    }
+    .cropped-action {
+      content: 'show more';
+      height: 6em;
+      background: linear-gradient(to top, white, transparent);
+    }
+    .cropped {
+      max-height: 26em;
+      overflow: hidden;
     }
   </style>
 </head>
@@ -73,43 +94,6 @@
 <div id="content">
 <h1>(clement_denis || <a href="https://github.com/kigiri">kigiri</a> ||  <a href="https://www.youtube.com/channel/UCftI9Qw4HJXKVNzhuqZM_2w">godofmacro</a>)</h1>
 <div id="hr"></div>
-
-<pre>
-BEGIN (LOCALE : FR)
-
-  2017 - TOULOUSE - Dev (Chomage volontaire)
-  2016 - TOULOUSE - Payname / Morning (CDI - dev fintech)
-  2015 - PARIS - Dev (J'apprend le JavaScript chez moi)
-  2014 - PARIS - Ecole 42 (1ers stages en web developpement)
-  2013 - PARIS - Ecole 42 (Je commence la programmation)
-  2012 - TOURS - World of Warcraft (Divorce de mes parents)
-  2011 - ANGERS - World of Warcraft (Je lance ma chaine YouTube GodOfMacro)
-  2010 - ANGERS - World of Warcraft (J'ai fait mon 1er serveur privé)
-  2009 - RENNES - Ecole de 3D (j'ai pas aimé)
-  2008 - BAYONNE - Beaux arts (C'est top, mais je voulais plus d'informatique)
-  2007 - ST_NAZAIRE - Lycée XP (On test des alternatives, sans succès, 1ère video YouTube)
-  2006 - LE_MANS - Graphisme CAP (Je l'ai eu mais pas trouvé d'alternance pour continuer)
-  2005 - LE_MANS - Graphisme CAP (Vu que l'ecole c'est pas mon truc mais que je dessine...)
-  2004 - ANGERS - College 3eme (WORLD OF WARCRAFT GO GO GO GO !)
-  2003 - ANGERS - College 4eme (Internet chez moi, 1ers sites + piratage)
-  2002 - ANGERS - College 5eme (1er prix Concours d'angouleme BD)
-  2001 - ANGERS - College 6eme (Ok donc le college est aussi chiant que l'ecole)
-  2000 - ANGERS - Ecole Primaire CM2 (Sortie de Diablo II, j'y joue encore)
-  1999 - ANGERS - Ecole Primaire CM1 (Sortie de Matrix, j'ai été le voir 3x au cinéma)
-  1998 - ANGERS - Ecole Primaire CE2 (2ème ordi, iMac, woooowwwwww)
-  1997 - ANGERS - Ecole Primaire CE1 (Sortie de Diablo, je joue en secret chez ma voisine)
-  1996 - ANGERS - Ecole Primaire CP (Ok donc l'ecole primaire c'est pas ça non plus)
-  1995 - ANGERS - Maternelle Grande Section (c'est dur)
-  1994 - ANGERS - Maternelle Grande Section (mes parents en chient)
-  1993 - ANGERS - Maternelle Petite Section (j'en chie a l'ecole)
-  1992 - ANGERS - Maternelle Petite Section (1er Ordinateur : Macintosh Plus, 1MB de ram)
-  1991 - ANGERS - Creche (Je Parle)
-  1990 - ANGERS - Creche (Je Cours)
-  1989 - ANGERS - Creche (Je Marche)
-  1988 - ANGERS - Naissance (Je Chiale)
-
-END
-</pre>
 <div class="links-list"><h3>web</h3>
 <a href="https://kigiri.github.io/yt-share">yt-share - Meilleur integration des videos youtube sur facebook</a>
 <a href="https://kigiri.github.io/issou">issou - stickers jvc</a>
@@ -119,25 +103,26 @@ END
 <a href="http://kigiri.github.io/newsletter">newsletter - Outil pour creer des mails html</a>
 </div>
 <div class="links-list"><h3>code</h3>
-<a href="https://github.com/kigiri/hello-bot">Bot discord qui dit bonjour</a>
-<a href="https://github.com/kigiri/guichet">Bot pour gerer une file d'attente dans discord</a>
-<a href="https://github.com/kigiri/cursus-js">Exercises pour apprendre le JS</a>
-<a href="https://github.com/kigiri/tupac">Bundler JS</a>
-<a href="https://github.com/kigiri/chomage">Script pour s'actualiser a Pole Emplois</a>
-<a href="https://github.com/kigiri/video-server">Site pour upload et stream des videos</a>
-<a href="https://github.com/kigiri/izi">Lib avec tout pleins de fonctions que j'utilise en JS</a>
-<a href="https://github.com/kigiri/gaman">Script pour telecharger des manga (en cours)</a>
-<a href="https://github.com/kigiri/gadgeto">Script qui lance node et copie l'url du debuger car c'est relou a faire</a>
-<a href="https://github.com/kigiri/learn">Site pour apprendre le javascript en ligne (casser car l'api a changer, non maintenu)</a>
-<a href="https://github.com/kigiri/js-page">Front pour lire mes mangas</a>
-<a href="https://github.com/kigiri/test-mirror">Lib pour lancer les test par rapport a la structure des dossiers</a>
-<a href="https://github.com/kigiri/store-chain">Lib pour stocker des donner dans une chaine de Promise</a>
-<a href="https://github.com/kigiri/css-to-js">Plugin Sublime-text pour convertir la syntaxe css en js</a>
-<a href="https://github.com/kigiri/TabPanel">Extension pour chrome qui facilite le switch entre des onglets</a>
-<a href="https://github.com/kigiri/ovh-sniffer">Script pour acheter des serveur kimsufi</a>
-<a href="https://github.com/kigiri/js-file-explorer">Extension pour reformater l'affichage de la liste des fichier ngnix</a>
+<a href="https://github.com/kigiri/hello-bot">hello-bot - Bot discord qui dit bonjour</a>
+<a href="https://github.com/kigiri/guichet">guichet - Bot pour gerer une file d'attente dans discord</a>
+<a href="https://github.com/kigiri/cursus-js">cursus-js - Exercises pour apprendre le JS</a>
+<a href="https://github.com/kigiri/tupac">tupac - Bundler JS</a>
+<a href="https://github.com/kigiri/chomage">chomage - Script pour s'actualiser a Pole Emplois</a>
+<a href="https://github.com/kigiri/video-server">video-server - Site pour upload et stream des videos</a>
+<a href="https://github.com/kigiri/izi">izi - Lib avec tout pleins de fonctions que j'utilise en JS</a>
+<a href="https://github.com/kigiri/gaman">gaman - Script pour telecharger des manga (en cours)</a>
+<a href="https://github.com/kigiri/gadgeto">gadgeto - Script qui lance node et copie l'url du debuger car c'est relou a faire</a>
+<a href="https://github.com/kigiri/learn">learn - Site pour apprendre le javascript en ligne (casser car l'api a changer, non maintenu)</a>
+<a href="https://github.com/kigiri/js-page">js-page - Front pour lire mes mangas</a>
+<a href="https://github.com/kigiri/test-mirror">test-mirror - Lib pour lancer les test par rapport a la structure des dossiers</a>
+<a href="https://github.com/kigiri/store-chain">store-chain - Lib pour stocker des donner dans une chaine de Promise</a>
+<a href="https://github.com/kigiri/css-to-js">css-to-js - Plugin Sublime-text pour convertir la syntaxe css en js</a>
+<a href="https://github.com/kigiri/TabPanel">TabPanel - Extension pour chrome qui facilite le switch entre des onglets</a>
+<a href="https://github.com/kigiri/ovh-sniffer">ovh-sniffer - Script pour acheter des serveur kimsufi</a>
+<a href="https://github.com/kigiri/js-file-explorer">js-file-explorer - Extension pour reformater l'affichage de la liste des fichier ngnix</a>
 </div>
-<div class="links-list"><h3>videos</h3>
+
+<div class="links-list cropped"><h3>videos</h3>
 <a href="https://www.youtube.com/watch?v=0GoG-Kxhia8">AngryCodeReview: Je crache sur Async / Await</a><i>19 minutes</i>
 <a href="https://www.youtube.com/watch?v=vpDytuYdK4w">CodeReview: un simple bot discord en JS</a><i>21 minutes</i>
 <a href="https://www.youtube.com/watch?v=L8AtfEkrIAI">Interventions live sur la programation avec 2 potes</a><i>4 heures</i>
@@ -145,13 +130,11 @@ END
 <a href="https://www.youtube.com/watch?v=HjB9rjVb1hI">On a pounaide mon skype</a><i>3 minutes, 21 secondes</i>
 <a href="https://www.youtube.com/watch?v=dxOOKZTt9ZQ">Il n'est pas trop tard pour apprendre</a><i>15 minutes</i>
 <a href="https://www.youtube.com/watch?v=XsZ5k_QkidM">Le planck (clavier)</a><i>5 minutes, 29 secondes</i>
-<a href="https://www.youtube.com/watch?v=AwLPcX8Rj68">2017 01 15 20 28 16</a><i>8 minutes, 2 secondes</i>
 <a href="https://www.youtube.com/watch?v=AsB2eK4nPjM">Comment avoir des reponses</a><i>2 minutes, 46 secondes</i>
 <a href="https://www.youtube.com/watch?v=UgrmwfCxBJM">Stream Rediff : Making Windows Great Again !!!1!</a><i>31 minutes</i>
 <a href="https://www.youtube.com/watch?v=7xh1muq46jA">007 Manipuler les Array</a><i>20 minutes</i>
 <a href="https://www.youtube.com/watch?v=pqGiS9hEze0">Introducing Inaudible.com (live stream faire un micro projet from scratch)</a><i>2 heures, 43 minutes</i>
 <a href="https://www.youtube.com/watch?v=IMreJ-Shj1E">Comment j'utilise sublime text</a><i>8 minutes, 28 secondes</i>
-<a href="https://www.youtube.com/watch?v=UhLVUQxuCN4">Comment j'utilise Sublime Texte</a><i>8 minutes, 55 secondes</i>
 <a href="https://www.youtube.com/watch?v=MjzY3U1mmbM">006b - Datastructures Array</a><i>3 minutes, 29 secondes</i>
 <a href="https://www.youtube.com/watch?v=Uaupu1Dtl2k">006a - Datastructures Array</a><i>6 minutes, 20 secondes</i>
 <a href="https://www.youtube.com/watch?v=Ss0qZyAdxcY">005b - Datastructures Object</a><i>5 minutes, 10 secondes</i>
@@ -352,7 +335,7 @@ END
 <a href="https://www.youtube.com/watch?v=dUx4yW20n2o">The Flight Of the Bubulle bee</a><i>2 minutes, 12 secondes.</i>
 <a href="https://www.youtube.com/watch?v=b8gbiHIg3Y8">this is SPARTAAAA PVP !!!!</a><i>2 minutes, 28 secondes.</i>
 <a href="https://www.youtube.com/watch?v=x8dzr6AIpGM">[Tuto] 2.3 - Panoramique & Recadrage</a><i>8 minutes, 16 secondes.</i>
-<a href="https://www.youtube.com/watch?v=QJgJjj7SpiA">[Tuto]  2.2 - Editing, les bases de vegas</a><i>8 minutes, 53 secondes.</i>
+<a href="https://www.youtube.com/watch?v=QJgJjj7SpiA">[Tuto] 2.2 - Editing, les bases de vegas</a><i>8 minutes, 53 secondes.</i>
 <a href="https://www.youtube.com/watch?v=M18toWwuT34">[Tuto] 2.1 - Création du projet, importation des fichiers et Ajustement du format</a><i>4 minutes, 19 secondes.</i>
 <a href="https://www.youtube.com/watch?v=jTZ5XFcTYXI">[Tuto] 1 - La Configuartion de FRAPS</a><i>4 minutes, 28 secondes.</i>
 <a href="https://www.youtube.com/watch?v=t4J2rMmhYFU">Paul Le Kikoo</a><i>3 minutes, 55 secondes.</i>
@@ -392,7 +375,50 @@ END
 <a href="https://www.youtube.com/watch?v=jjD3uIgZqr4">Kamoulox(Aos) VS Hunts</a><i>8 minutes, 8 secondes.</i>
 <a href="https://www.youtube.com/watch?v=uwafz7hix9Q">Aos BG</a><i>7 minutes, 33 secondes.</i>
 <a href="https://www.youtube.com/watch?v=_v95GgtCulg">Aos Action twink 19 priest</a><i>2 minutes, 47 secondes.</i>
+<div class="cropped-action">show more</div>
 </div>
+<div id="info">
+J'ai fait ~ 2 videos / mois depuis 2007
+</div>
+<div id="hr"></div>
+
+<pre class="links-list">
+-- HISTORY LOG
+BEGIN (LOCALE : FR)
+
+  2017 - TOULOUSE - Dev (Chomage volontaire)
+  2016 - TOULOUSE - Payname / Morning (CDI - dev fintech)
+  2015 - PARIS - Dev (J'apprend le JavaScript chez moi)
+  2014 - PARIS - Ecole 42 (1ers stages en web developpement)
+  2013 - PARIS - Ecole 42 (Je commence la programmation)
+  2012 - TOURS - World of Warcraft (Divorce de mes parents)
+  2011 - ANGERS - World of Warcraft (Je lance ma chaine YouTube GodOfMacro)
+  2010 - ANGERS - World of Warcraft (J'ai fait mon 1er serveur privé)
+  2009 - RENNES - Ecole de 3D (j'ai pas aimé)
+  2008 - BAYONNE - Beaux arts (C'est top, mais je voulais plus d'informatique)
+  2007 - ST_NAZAIRE - Lycée XP (On test des alternatives, sans succès, 1ère video YouTube)
+  2006 - LE_MANS - Graphisme CAP (Je l'ai eu mais pas trouvé d'alternance pour continuer)
+  2005 - LE_MANS - Graphisme CAP (Vu que l'ecole c'est pas mon truc mais que je dessine...)
+  2004 - ANGERS - College 3eme (WORLD OF WARCRAFT GO GO GO GO !)
+  2003 - ANGERS - College 4eme (Internet chez moi, 1ers sites + piratage)
+  2002 - ANGERS - College 5eme (1er prix Concours d'angouleme BD)
+  2001 - ANGERS - College 6eme (Ok donc le college est aussi chiant que l'ecole)
+  2000 - ANGERS - Ecole Primaire CM2 (Sortie de Diablo II, j'y joue encore)
+  1999 - ANGERS - Ecole Primaire CM1 (Sortie de Matrix, j'ai été le voir 3x au cinéma)
+  1998 - ANGERS - Ecole Primaire CE2 (2ème ordi, iMac, woooowwwwww)
+  1997 - ANGERS - Ecole Primaire CE1 (Sortie de Diablo, je joue en secret chez ma voisine)
+  1996 - ANGERS - Ecole Primaire CP (Ok donc l'ecole primaire c'est pas ça non plus)
+  1995 - ANGERS - Maternelle Grande Section (c'est dur)
+  1994 - ANGERS - Maternelle Grande Section (mes parents en chient)
+  1993 - ANGERS - Maternelle Petite Section (j'en chie a l'ecole)
+  1992 - ANGERS - Maternelle Petite Section (1er Ordinateur : Macintosh Plus, 1MB de ram)
+  1991 - ANGERS - Creche (Je Parle)
+  1990 - ANGERS - Creche (Je Cours)
+  1989 - ANGERS - Creche (Je Marche)
+  1988 - ANGERS - Naissance (Je Chiale)
+
+END
+</pre>
 
 <h4 id="links"><a class="github" href="https://github.com/kigiri">github</a>
 <a class="youtube" href="https://www.youtube.com/channel/UCftI9Qw4HJXKVNzhuqZM_2w">youtube</a>
