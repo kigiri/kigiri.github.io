@@ -68,8 +68,27 @@ You deserve this.
 </div>
 <div id="yt" class="links-list cropped"></div>
 
+<style type="text/css">
+button.cropped-action {
+  border: 0;
+  color: blue;
+  font-size: 16px;
+  font-family: 'Consolas', monospace;
+}
+button.cropped-action:focus {
+  background: linear-gradient(to top, blue, transparent);
+  color: white;
+  outline: none;
+}
+</style>
 <script type="text/javascript">
-document.getElementById('yt').innerHTML='<h3>videos</h3><div class="cropped-action" onclick="(this.parentElement.classList.remove(\'cropped\'), this.remove())">show more</div>'
+var x = document.getElementsByTagName('a'), j = 0
+while (j < x.length) {x[j].tabIndex=++j}
+
+function restoreTab() {var a = document.getElementsByTagName('a'), i = -1
+while (++i < a.length) {a[i].tabIndex===-1&&(a[i].tabIndex=i+1)&&(i===(j+20)&&a[i].focus())}}
+
+document.getElementById('yt').innerHTML='<h3>videos</h3><button class="cropped-action" tabindex='+(j+22)+' onclick="restoreTab(this.parentElement.classList.remove(\'cropped\'), this.remove())">show more</button>'
 +["0GoG-Kxhia8$AngryCodeReview: Je crache sur Async / Await$19min",
 "vpDytuYdK4w$CodeReview: un simple bot discord en JS$21min",
 "L8AtfEkrIAI$Interventions live sur la programation avec 2 potes$4h",
@@ -321,7 +340,7 @@ document.getElementById('yt').innerHTML='<h3>videos</h3><div class="cropped-acti
 "jjD3uIgZqr4$Kamoulox(Aos) VS Hunts$8min 08sec",
 "uwafz7hix9Q$Aos BG$7min 33sec",
 "_v95GgtCulg$Aos Action twink 19 priest$2min 47sec"]
-.map(function(a,_){return(_=a.split('$'),'<div class="link"><a href="https://www.youtube.com/watch?v='+_[0]+'">'+_[1]+'</a><i>'+_[2]+'</i></div>')})
+.map(function(a,i,_){return(_=a.split('$'),'<div class="link"><a tabindex='+(i>19?-1:24+i)+' href="https://www.youtube.com/watch?v='+_[0]+'">'+_[1]+'</a><i>'+_[2]+'</i></div>')})
 .join('\n')
 
 /*
